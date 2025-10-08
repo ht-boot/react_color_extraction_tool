@@ -8,5 +8,6 @@ function getPlugins() {
 }
 
 export default defineConfig({
+  base: "./",
   plugins: getPlugins(),
 });
