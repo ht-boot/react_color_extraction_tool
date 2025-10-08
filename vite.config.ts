@@ -8,6 +8,6 @@ function getPlugins() {
 }
 
 export default defineConfig({
-  base: "/",
   plugins: getPlugins(),
+  base: "/react_color_extraction_tool/",
 });
