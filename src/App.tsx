@@ -1,7 +1,7 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "@/pages/Home";
 import { useState } from "react";
-import { AuthContext } from '@/contexts/authContext';
+import { AuthContext } from "@/contexts/authContext";
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -16,7 +16,12 @@ export default function App() {
     >
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/other" element={<div className="text-center text-xl">Other Page - Coming Soon</div>} />
+        <Route
+          path="/other"
+          element={
+            <div className="text-center text-xl">Other Page - Coming Soon</div>
+          }
+        />
       </Routes>
     </AuthContext.Provider>
   );
