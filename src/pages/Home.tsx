@@ -21,6 +21,7 @@ export default function Home() {
 
       // Extract colors
       const extractedColors = await extractColors(file, canvasRef, 6);
+
       setColors(extractedColors);
 
       toast.success("成功提取颜色！");
